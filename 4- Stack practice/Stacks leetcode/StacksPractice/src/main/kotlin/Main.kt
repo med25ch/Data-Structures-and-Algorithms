@@ -4,6 +4,9 @@ fun main() {
     //println("Valid Parentheses example!")
     //println(isInputValid(")"))
 
-    println("Remove All Adjacent Duplicates In String")
-    println(removeDuplicates("azxxzy"))
+    //println("Remove All Adjacent Duplicates In String")
+    //println(removeDuplicates("azxxzy"))
+
+    println(simplifyPath("/a/./b/../../c/"))
+
 }
