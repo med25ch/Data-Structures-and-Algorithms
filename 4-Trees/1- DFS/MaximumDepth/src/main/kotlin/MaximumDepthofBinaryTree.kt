@@ -11,7 +11,7 @@ A binary tree's maximum depth is the number of nodes along the longest path from
  */
 
 
-fun maxDepth(root: Node<Int>?): Int {
+fun maxDepth(root: TreeNode<Int>?): Int {
 
     if(root == null) {
         return 0
