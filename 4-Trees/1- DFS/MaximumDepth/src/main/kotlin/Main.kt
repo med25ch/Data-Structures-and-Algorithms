@@ -4,9 +4,9 @@ fun main() {
     println("Hello DFS playground!")
 
     // building the tree
-    val root = buildTree(listOf(2,null,3,null,4,null,5,null,6))
+    val root = buildTreeFromArray(listOf(1,2,3,4,5,6))
 
     // Testing :
-    println(minDepth(root))
+    println(countNodes(root))
 
 }
