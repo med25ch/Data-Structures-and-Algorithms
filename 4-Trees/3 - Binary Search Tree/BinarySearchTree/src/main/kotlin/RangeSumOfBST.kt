@@ -14,10 +14,19 @@ fun rangeSumBST(root: TreeNode?, low: Int, high: Int): Int {
         return 0
     }
 
+    var answer = 0
+
     val stack : ArrayDeque<TreeNode> = ArrayDeque()
-    stack.add(root)
+    stack.addLast(root)
 
-    // while()
+    while(stack.isNotEmpty()) {
+        val node = stack.removeLast() ?: continue
+        val v = node.`val`
 
-    return 0
+        if (v in low..high) answer += v
+        if (v > low) node.left?.let { stack.addLast(it) }   // left could contain >= low
+        if (v < high) node.right?.let { stack.addLast(it) } // right could contain <= high
+    }
+
+    return answer
 }
