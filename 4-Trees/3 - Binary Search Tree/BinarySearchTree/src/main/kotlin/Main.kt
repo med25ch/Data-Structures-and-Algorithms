@@ -3,7 +3,8 @@ package org.example
 fun main() {
     println("Hello World!")
 
-    val root = buildTree(listOf(10,5,15,3,7,null,18))
+    val root1 = buildTree(listOf(null))
+    val root2 = buildTree(listOf(5,1,7,0,2))
 
-    println(rangeSumBST(root,7, 15))
+    println(getAllElements(root1, root2))
 }
